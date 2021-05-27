@@ -13,17 +13,21 @@ function Footer() {
     return (
         <div className='footer'>
             <div className="footer-left">
-                <p>Album song details</p>
+                <img src="https://i1.sndcdn.com/artworks-z2DWwq2aIUlrEvGB-L8kYEg-t500x500.jpg" className='footer-albumLogo' alt="" />
+                <div className="footer-songInfo">
+                    <h4>Life in a Year</h4>
+                    <p>Jordan Smith</p>
+                </div>
             </div>
             <div className="footer-center">
                 <ShuffleIcon className='footer-green' />
                 <SkipPreviousIcon className='footer-icon' />
                 <PlayCircleOutlineIcon fontSize='large' className='footer-icon' />
                 <SkipNextIcon className='footer-icon' />
-                <RepeatIcon className='footer-icon' />
+                <RepeatIcon className='footer-green' />
             </div>
             <div className="footer-right">
-                <Grid container-spacing={2}>
+                <Grid container spacing={2}>
                     <Grid item>
                         <PlaylistPlay />
                     </Grid>
@@ -33,7 +37,6 @@ function Footer() {
                     <Grid item xs>
                         <Slider aria-aria-labelledby='continious-slide' />
                     </Grid>
-
                 </Grid>
             </div>
         </div>
